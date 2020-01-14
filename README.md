@@ -7,10 +7,12 @@ You are the new developer on a program that reads in a list of addresses and geo
 - Clone this CodeSandbox
 - Carefully read the requirements for each step of the test
 - Correct or enhance the `src/processAddressList.js` file (do not modify any other files)
+- Use `npm run start:sample` to run the script on the sample data set
+- Use `npm run start:full` to run the script on the full data set
 
 ## Step 1 - Fix the Bug
 
-When we run the geocoder script on the sample data (with `npm run start:sample`) everything seemed fine, but we gent an error when running it on the full data set. Please fix it so that the script runs to completion without error on any valid record.
+When we run the geocoder script on the sample data everything seemed fine, but we gent an error when running it on the full data set. Please fix it so that the script runs to completion without error on any valid record.
 
 ## Step 2 - Improve the Performance
 
