@@ -4,11 +4,12 @@
   "description": "Programming test on a small example geocoding application",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src/ -d lib/",
-    "prestart:sample": "mkdir -p ./output && npm run build",
-    "start:sample": "node lib/index.js --input ./data/sample.csv --output ./output/sample.json",
-    "prestart:full": "mkdir -p ./output && npm run build",
-    "start:full": "node lib/index.js --input ./data/full.csv --output ./output/full.json",
+    "dev": "npm run build",
+    "build": "mkdir -p ./output && babel src/ -d lib/",
+    "prestart": "npm run build",
+    "start": "node lib/index.js --input ./data/sample.csv --output ./output/sample.json",
+    "prefull": "npm run build",
+    "full": "node lib/index.js --input ./data/full.csv --output ./output/full.json",
     "test": "eslint src"
   },
   "devDependencies": {

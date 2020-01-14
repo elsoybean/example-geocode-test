@@ -15,10 +15,12 @@ const go = async (inputFile, outputFile) => {
 };
 
 const { input, output } = argv;
+const startTime = new Date().getTime();
 
 go(input, output)
   .then(() => {
-    console.log('Finished');
+    const endTime = new Date().getTime();
+    console.log('Finished in', (1.0 * endTime - startTime) / 1000, 'seconds');
   })
   .catch((err) => {
     console.error(err);
