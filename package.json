@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Programming test on a small example geocoding application",
   "main": "lib/index.js",
+  "template": "node",
   "scripts": {
     "build": "babel src/ -d lib/",
     "prestart:sample": "mkdir -p ./output && npm run build",
