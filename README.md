@@ -10,6 +10,7 @@ You are the new developer on a program that reads in a list of addresses and geo
 - Open a new terminal by clicking the + just below in the Terminal window (or use the Server Control Panel all the way to the left)
 - Use `npm run start:sample` to run the script on the sample data set
 - Use `npm run start:full` to run the script on the full data set
+- Both the full and sample data sets can be found in the `data` directory
 
 ## Step 1 - Fix the Bug
 
