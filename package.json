@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "npm run build",
     "build": "mkdir -p ./output && babel src/ -d lib/",
-    "prestart:sample": "npm run build",
-    "start:sample": "node lib/index.js --input ./data/sample.csv --output ./output/sample.json",
-    "prestart:full": "npm run build",
-    "start:full": "node lib/index.js --input ./data/full.csv --output ./output/full.json",
+    "prestart": "npm run build",
+    "start": "node lib/index.js",
+    "prerun:sample": "npm run build",
+    "run:sample": "node lib/geocodeInputFile.js --input ./data/sample.csv --output ./output/sample.json",
+    "prerun:full": "npm run build",
+    "run:full": "node lib/geocodeInputFile.js --input ./data/full.csv --output ./output/full.json",
     "test": "eslint src"
   },
   "devDependencies": {
@@ -48,6 +50,7 @@
   "dependencies": {
     "csvtojson": "^2.0.10",
     "seedrandom": "^3.0.5",
+    "showdown": "^1.9.1",
     "yargs": "^15.1.0"
   }
 }
