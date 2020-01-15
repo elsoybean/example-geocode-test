@@ -4,10 +4,9 @@
   "description": "Programming test on a small example geocoding application",
   "main": "lib/index.js",
   "scripts": {
-    "dev": "npm run build",
     "build": "mkdir -p ./output && babel src/ -d lib/",
     "prestart": "npm run build",
-    "start": "nodemon lib/index.js localhost 8080",
+    "start": "node lib/index.js",
     "prerun:sample": "npm run build",
     "run:sample": "node lib/geocodeInputFile.js --input ./data/sample.csv --output ./output/sample.json",
     "prerun:full": "npm run build",
@@ -35,7 +34,6 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-class-property": "^1.1.0",
     "eslint-plugin-import": "^2.17.3",
-    "nodemon": "^2.0.2",
     "prettier": "^1.17.1"
   },
   "repository": {
