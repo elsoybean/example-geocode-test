@@ -4,7 +4,7 @@
 
 You are the new developer on a program that reads in a list of addresses and geocodes each one with a mock geocoder. It seemed like it was working fine, but we ran into a few issues when we tried to use it on real data. We need to you handle the tasks below; it shouldn't take more than two hours.
 
-- Clone this CodeSandbox
+- Fork this CodeSandbox (or create a sandbox from this template)
 - Carefully read the requirements for each step of the test
 - Correct or enhance the `src/processAddressList.js` file (do not modify any other files)
 - Open a new terminal by clicking the "+" in the Terminal window (or use the Server Control Panel all the way to the left)
