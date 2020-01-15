@@ -4,7 +4,7 @@
   "description": "Programming test on a small example geocoding application",
   "scripts": {
     "build": "babel src/ -d lib/",
-    "start": "npm run build && node lib/index.js",
+    "start": "npm run build && node lib/instructionsServer.js",
     "prerun:sample": "mkdir -p ./output && npm run build",
     "run:sample": "node lib/geocodeInputFile.js --input ./data/sample.csv --output ./output/sample.json",
     "prerun:full": "mkdir -p ./output && npm run build",
